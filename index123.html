@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="15;url=https://htccarpool.haadthip.com"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เเจ้งเพื่อทราบ</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="indexjs.js"></script>
+    
+    
+    <!--<script>
+        var count = 15;
+        var countdownTimer = setInterval(function() {
+            count--;
+            if (count <= 0) {
+                clearInterval(countdownTimer);
+            }
+            document.getElementById('timer').innerHTML = count;
+        }, 1000);
+    </script>   -->
+</head>
+<body>
+    
+    
+    <div class = "slideshow-container">
+            
+        <div class="mySlides fade">
+            <img src="https://www.haadthip.com/glide/assets/images/default/opengraph.jpg?h=350&fit=max&fm=jpg&t=1714074694" stype="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://static.thairath.co.th/media/Dtbezn3nNUxytg04ajbPTNdEdcpW8xpXtTl0VUGDL0ZJJr.jpg">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://news.gimyong.com/static/uploads/pictures/202105/1688861637-72736.webp" stype="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
+        <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+
+    </div> 
+    <br>
+    
+    <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlides(1)"></span>
+        <span class="dot" onclick="currentSlides(2)" ></span>
+        <span class="dot" onclick="currentSlides(3)"></span>
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+    <!--   1
+    <nav> 
+        <div class="nav-container">
+            <a href="index123.html">
+                <img src="https://www.haadthip.com/storage/about/company-milestones/1988.jpg" class="logonav">
+            </a>
+        </div> 
+        <div class="nav-profile">
+            <p>Haadthip</p>
+            <div class="nav-profile-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+ 
+    </nav>
+    -->
+    
+
+    <div class = "container">
+        <div class="side">
+            <input onkeyup="searchsomething(this)" id="txt_search" type="text" class="side-search" placeholder="Search something...">
+
+
+            
+            <a onclick="searchproduct('all')" class="side-items">
+                All Product
+            </a>
+            <a onclick="searchproduct('sparking')" class="side-items">
+                Sparkling water
+            </a>
+            <a onclick="searchproduct('water')" class="side-items">
+                Water
+            </a>
+            <a onclick="searchproduct('juice')" class="side-items">
+                Juice
+            </a>
+        </div>
+
+
+        <div id="productlist" class = "product">
+            <div class="product-items">
+                <img class="product-img" src="https://www.haadthip.com/storage/beverage-category/coke/coke.png" alt="">
+                <p style="font-size: 1.2vw; text-align: right;">Product name</p>
+                <p style="font-size: 1.2vw; text-align: right;">16.</p>
+            </div>
+            <div class="product-items">
+                <img class="product-img" src="https://www.haadthip.com/storage/beverage-category/coke/coke-light.png" alt="">
+                <p style="font-size: 1.2vw; text-align: right;">Product name</p>
+                <p style="font-size: 1.2vw; text-align: right;">16.</p>
+            </div>
+            <div class="product-items">
+                <img class="product-img" src="https://www.haadthip.com/storage/beverage-category/coke/coke-zero-sugar-limited.png" alt="">
+                <p style="font-size: 1.2vw; text-align: right;">Product name</p>
+                <p style="font-size: 1.2vw; text-align: right;">16.</p>
+            </div>
+            <div class="product-items">
+                <img class="product-img" src="https://www.haadthip.com/storage/beverage-category/fanta/fanta-orange.png" alt="">
+                <p style="font-size: 1.2vw; text-align: right;">Product name</p>
+                <p style="font-size: 1.2vw; text-align: right;">16.</p>
+            </div>
+            <div class="product-items">
+                <img class="product-img" src="https://www.haadthip.com/storage/beverage-category/fanta/fanta-strawberry.png" alt="">
+                <p style="font-size: 1.2vw; text-align: right;">Product name</p>
+                <p style="font-size: 1.2vw; text-align: right;">16.</p>
+            </div>
+            <div class="product-items">
+                <img class="product-img" src="https://www.haadthip.com/storage/beverage-category/fanta/fanta-punch.png" alt="">
+                <p style="font-size: 1.2vw; text-align: right;">Product name</p>
+                <p style="font-size: 1.2vw; text-align: right;">16.</p>
+            </div>
+            <div class="product-items">
+                <img class="product-img" src="https://www.haadthip.com/storage/beverage-category/fanta/fanta-grape.png" alt="">
+                <p style="font-size: 1.2vw; text-align: right;">Product name</p>
+                <p style="font-size: 1.2vw; text-align: right;">16.</p>
+            </div>
+            <div class="product-items">
+                <img class="product-img" src="https://www.haadthip.com/storage/beverage-category/sprite/sprite.png" alt="">
+                <p style="font-size: 1.2vw; text-align: right;">Product name</p>
+                <p style="font-size: 1.2vw; text-align: right;">16.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" >
+        <div class="modal-bg"></div>
+        <div class="modal-page">
+            <h2>Detail</h2>
+            <br>
+            <div class="modaldesc-content">
+                <img class="modaldesc-img" src="https://www.haadthip.com/storage/beverage-category/coke/coke.png" alt="">
+                <div class="modaldesc-detail">
+                    <P style="font-size:1.5vw">Product Name</P>
+                    <p style="font-size:1.5vw">1 Can /16. Bath</p>
+                    <br>
+                    <p style="color:#555151">รายละเอียดสินค้า
+                        โคคา-โคล่า ไลท์ สดชื่นและเพลิดเพลินไปกับเครื่องดื่มที่มาพร้อมกับรสชาติที่ชุ่มฉ่ำ 
+                        ซึ่งจะช่วยเพิ่มพลังให้กับวันของคุณ โค้กไลท์ ไม่มีน้ำตาลและ ไม่มีแคลอรี 
+                        รสชาติอันยอดเยี่ยมและความซ่่านั้นทำให้ โคคาขโคล่า
+                        เป็นเครื่องดื่มที่สมบูรณ์แบบเพื่อให้คุณสดชื่นในช่วงบ่ายพร้อมกับมื้ออาหารของคุณ</p>
+                    <br>
+                    <div class="btn-control">
+                        <button class="btn">
+                            Close
+                        </button>
+                        <button class="btn btn-buy">
+                            Add to crat
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="modal" style="display: none;">
+        <div class="modal-bg"></div>
+        <div class="modal-page">
+            <h2>My cart</h2>
+            <br>
+            <div class="cartlist">
+                <div class="cartlist-items">
+                    <div class="cartlist-left">
+                        <img class="cartlist-img"  src="https://www.haadthip.com/storage/beverage-category/coke/coke.png" alt="">
+                        <div class="cartlist-detail">
+                            <p style="font-size: 1.5vw">Product</p>
+                            <p style="font-size: 1.5vw">16.Bath</p>
+                        </div>
+                    </div>
+                    <div class="cartlist-right">
+                        <p class="btnc">-</p>
+                        <p style="margin: 0 20px;">1</p>
+                        <p class="btnc">+</p>
+                    </div>
+                </div>
+                <div class="cartlist-items">
+                    <div class="cartlist-left">
+                        <img class="cartlist-img"  src="https://www.haadthip.com/storage/beverage-category/coke/coke-light.png" alt="">
+                        <div class="cartlist-detail">
+                            <p style="font-size: 1.5vw">Product</p>
+                            <p style="font-size: 1.5vw">16.Bath</p>
+                        </div>
+                    </div>
+                    <div class="cartlist-right">
+                        <p class="btnc">-</p>
+                        <p style="margin: 0 20px;">1</p>
+                        <p class="btnc">+</p>
+                    </div>
+                </div>
+                <div class="cartlist-items">
+                    <div class="cartlist-left">
+                        <img class="cartlist-img"  src="https://www.haadthip.com/storage/beverage-category/fanta/fanta-punch.png" alt="">
+                        <div class="cartlist-detail">
+                            <p style="font-size: 1.5vw">Product</p>
+                            <p style="font-size: 1.5vw">16.Bath</p>
+                        </div>
+                    </div>
+                    <div class="cartlist-right">
+                        <p class="btnc">-</p>
+                        <p style="margin: 0 20px;">1</p>
+                        <p class="btnc">+</p>
+                    </div>
+                </div>
+                <div class="cartlist-items">
+                    <div class="cartlist-left">
+                        <img class="cartlist-img"  src="https://www.haadthip.com/storage/beverage-category/sprite/sprite.png" alt="">
+                        <div class="cartlist-detail">
+                            <p style="font-size: 1.5vw">Product</p>
+                            <p style="font-size: 1.5vw">16.Bath</p>
+                        </div>
+                    </div>
+                    <div class="cartlist-right">
+                        <p class="btnc">-</p>
+                        <p style="margin: 0 20px;">1</p>
+                        <p class="btnc">+</p>
+                    </div>
+                </div>
+                <div class="cartlist-items">
+                    <div class="cartlist-left">
+                        <img class="cartlist-img"  src="https://www.haadthip.com/storage/beverage-category/coke/coke-zero-sugar-limited.png" alt="">
+                        <div class="cartlist-detail">
+                            <p style="font-size: 1.5vw">Product</p>
+                            <p style="font-size: 1.5vw">16.Bath</p>
+                        </div>
+                    </div>
+                    <div class="cartlist-right">
+                        <p class="btnc">-</p>
+                        <p style="margin: 0 20px;">1</p>
+                        <p class="btnc">+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-control">
+                <button class="btn">
+                    Cancel
+                </button>
+                <botton class="btn btn-buy">
+                    Buy
+                </botton>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+   
+   
+    <!--
+    <h1>เเจ้งเพื่อทราบ</h1>
+    <p>vbs.haadthip.com ยกเลิกการใช้งานแล้ว</p>
+    <ul>
+        <li>ให้ไปใช้ ระบบ carpool <a href="https://htccarpool.haadthip.com">https://htccarpool.haadthip.com</a> แทน</li>
+        <li>จะมีการ redirect ไปยัง <a href="https://htccarpool.haadthip.com">https://htccarpool.haadthip.com</a> ภายใน <span id="timer">15</span> วินาที</li>
+
+    </ul> -->
+
+</body>
+</html>
